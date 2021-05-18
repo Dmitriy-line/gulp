@@ -1,15 +1,9 @@
-// ===========подключнеие
 @import "mixins";
-/* fonts========== */
 @import "fonts";
-/* resset */
 @import "settings";
-/* Global variables */
+@import "global-styles";
 @import "vars.scss";
-/* Header */
 @import "header.scss";
-/* main content */
-@import "body.scss";
-/* Footer */
+@import "index.scss";
 @import "footer.scss";
 
