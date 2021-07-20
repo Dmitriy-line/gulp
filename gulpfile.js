@@ -13,14 +13,14 @@ let path = {
 		fonts: project_folder + "/fonts/",
 	},
 	src: {
-		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
+		html: [source_folder + "/*.{html,php}", "!" + source_folder + "/_*.html"],
 		css: source_folder + "/scss/main.scss",
 		js: source_folder + "/js/main.js",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: source_folder + "/fonts/*.ttf",
 	},
 	watch: {
-		html: source_folder + "/**/*.html",
+		html: source_folder + "/**/*.{html,php}",
 		css: source_folder + "/scss/**/*.scss",
 		js: source_folder + "/js/**/*.js",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"

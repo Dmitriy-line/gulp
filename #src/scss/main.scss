@@ -3,7 +3,13 @@
 @import "settings";
 @import "vars.scss";
 @import "global-styles";
-@import "header.scss";
-@import "index.scss";
+@import "./start-screen/start-screen.scss";
+@import "./header/header.scss";
+@import "./header/header-top.scss";
+@import "./header/city-modal.scss";
+@import "./header/header-midle.scss";
+@import "./header/header-bottom.scss";
+@import "./header/header-mobile";
+@import "style.scss";
 @import "footer.scss";
 

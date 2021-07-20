@@ -1,0 +1,103 @@
+.start-screen {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-color);
+    overflow: hidden;
+    visibility: hidden;
+    animation: loading linear 0.2s 3s forwards;
+    z-index: 100000;
+}
+
+// @keyframes loading {
+//     from{
+//         opacity: 1;
+//         visibility: visible;
+//     }
+//     to{
+//         opacity: 0;
+//         visibility: hidden;
+//     }
+// }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+.start-screen__logo {
+    margin-right: 40px;
+    @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    svg {
+        width: 360px;
+        height: 376px;
+        @media (max-width: 1440px) {
+            width: 260px;
+            height: 276px;
+        }
+        @media (max-width: 768px) {
+            width: 160px;
+            height: 176px;
+        }
+        @media (max-width: 320px) {
+            width: 130px;
+            height: 146px;
+        }
+    }
+}
+.start-screen__slogan {
+    @media (max-width: 1440px) {
+        width: 400px;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+        width: 300px;
+    }
+    @media (max-width: 320px) {
+        width: 200px;
+    }
+}
+.start-screen__text {
+    margin-bottom: 50px;
+    padding-left: 430px;
+    @media (max-width: 1440px) {
+        margin-bottom: 30px;
+        padding-left: 230px;
+    }
+    @media (max-width: 768px) {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+.start-screen__description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--star-color);
+    @media (max-width: 1440px) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    @media (max-width: 320px) {
+        font-size: 18px;
+    }
+}
+
+.loader {
+    width: 90px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translatex(-50%);
+}

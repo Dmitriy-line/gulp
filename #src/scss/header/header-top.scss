@@ -1,0 +1,86 @@
+.header__top {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width:1024px) {
+        display: none;
+    }
+}
+.header-inner{
+    position: relative;
+}
+.city__choice {
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--gray-color);
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        background: url(../../img/city-loc.svg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+.ticker {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 35px;
+    background: rgba(39, 174, 96, 0.05);
+    border-radius: 100px;
+    overflow: hidden;
+    @media (max-width:1024px) {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+.ticker__text {
+    width: 100%;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    white-space: nowrap;
+    color: var(--blue-color);
+}
+.exchange-rates {
+    display: flex;
+    align-items: center;
+}
+.currency {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+        margin-right: 30px;
+        @media (max-width:1100px) {
+            margin-right: 20px;
+        }
+    }
+}
+.curency__name {
+    margin-right: 10px;
+}
+.curency-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 35px;
+    background: var(--gray-medium);
+    border-radius: 100px;
+}
+.curency__value-text {
+    color: var(--Green-color);
+}

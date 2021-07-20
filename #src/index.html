@@ -4,21 +4,46 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon/favico.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/main.min.css">
-	<title>Name</title>
+
+	<script>
+		function CBR_XML_Daily_Ru(rates) {
+		  function trend(current, previous) {
+			if (current > previous) return '';
+			if (current < previous) return '';
+			return '';
+		  }
+			
+		  var USDrate = rates.Valute.USD.Value.toFixed(2).replace('.', ',');
+		  var USD = document.getElementById('USD');
+		  USD.innerHTML = USD.innerHTML = USDrate;
+		  USD.innerHTML += trend(rates.Valute.USD.Value, rates.Valute.USD.Previous);
+		
+		  var EURrate = rates.Valute.EUR.Value.toFixed(2).replace('.', ',');
+		  var EUR = document.getElementById('EUR');
+		  EUR.innerHTML = EUR.innerHTML.replace('00,00', EURrate);
+		  EUR.innerHTML += trend(rates.Valute.EUR.Value, rates.Valute.EUR.Previous);
+		}
+		</script>
+		<link rel="dns-prefetch" href="https://www.cbr-xml-daily.ru/" />
+		<script src="//www.cbr-xml-daily.ru/daily_jsonp.js" async></script>
+
+
+	<title>Финансовый супермаркет</title>
 </head>
 
 <body>
-	<!-- / header  -->
-	@@include('_header.html')
-	<!-- / main  -->
+	<!-- START SCREEN-->
+	@@include('_cover.html')
+	<!-- HEADER -->
+	@@include('./header/_header.html')
 	<main>
-	@@include('_main.html')
+		@@include('_main.html')
 	</main>
-	<!-- / footer  -->
+	<!-- FOOTER  -->
 	@@include('_footer.html')
-	<!-- / End of footer -->
+	<!-- SCRIPT  -->
 	<script src="js/main.min.js"></script>
 </body>
 

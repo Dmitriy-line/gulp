@@ -1,0 +1,92 @@
+<header class="header">
+	<div class="container">
+		<div class="header-inner">
+			<!-- мобильный хедер -->
+			<div class="header__mobile">
+					<div class="header__mobile-top">
+						<div class="heder-logo">
+							<img class="logo-img" src="../img/header-logo.svg" alt="Логотип">
+							<img class="slogan-img" src="../img/header-slogan.svg" alt="Слоган">
+						</div>
+						<button class="mobile-bascket"></button>
+						<div class="burger"><span></span></div>
+					</div>
+				<marquee class="ticker ticker_mobile">
+					<a class="ticker__text" href="https://www.tinkoff.ru/cards/debit-cards/tinkoff-black/" target="blanch">Банк
+						Тинькофф снизил процентную ставку на кредиты, выбирай. Акция от Тинькофф,
+						карта с кэшбеком теперь и для АЗС.</a>
+				</marquee>
+			</div>
+			<!-- верхняя часть хедера -->
+			<div class="header__top">
+				<p class="city city__choice" id="user-city">Россия</p>
+				<marquee class="ticker">
+					<a class="ticker__text" href="https://www.tinkoff.ru/cards/debit-cards/tinkoff-black/" target="blanch">Банк
+						Тинькофф снизил процентную ставку на кредиты, выбирай. Акция от Тинькофф,
+						карта с кэшбеком теперь и для АЗС.</a>
+				</marquee>
+				<div class="exchange-rates">
+					<div class="currency">
+						<span class="paragraph-3-13 curency__name">USD</span>
+						<div class="curency-value">
+							<div class="paragraph-3-13 curency__value-text" id="USD">00,00</div>
+						</div>
+					</div>
+					<div class="currency">
+						<span class="paragraph-3-13 curency__name">EUR</span>
+						<div class="curency-value">
+							<span class="paragraph-3-13 curency__value-text" id="EUR">00,00</span>
+						</div>
+					</div>
+
+					<div class="currency">
+						<span class="paragraph-3-13  curency__name">Ставка ЦБ</span>
+						<div class="curency-value">
+							<span class="paragraph-3-13 curency__value-text" id="centro-bank">4.5%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			@@include('_modal-city.html')
+			<!-- средняя часть хедера -->
+			<div class="header-midle">
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">Кредиты</li>
+						<li class="header__nav-item">Ипотека</li>
+						<li class="header__nav-item">Карты</li>
+						<li class="header__nav-item">Займы</li>
+						<li class="header__nav-item">Вклады</li>
+						<li class="header__nav-item">Страховки</li>
+						<li class="header__nav-item">Юристы</li>
+						<li class="header__nav-item">Другое</li>
+					</ul>
+				</nav>
+				<div class="search-container">
+					<input type="search" class="search" placeholder="Что ищем">
+					<img src="../img/search-icon.svg" alt="Лупа">
+				</div>
+
+			</div>
+			<!-- нижняя часть хедера -->
+			<div class="header-bottom">
+				<div class="heder-logo">
+					<img class="logo-img" src="../img/header-logo.svg" alt="Логотип">
+					<img class="slogan-img" src="../img/header-slogan.svg" alt="Слоган">
+				</div>
+				<div class="header-bascket">
+					<span class="header__bascket-description">Добавляй кредиты в корзину <br> и выбирай
+						подходящий</span>
+					<div class="header__bascket-img">
+						<img src="../img/bascket.png" alt="Корзина">
+						<span class="bascket-amount">12</span>
+					</div>
+				</div>
+				<div class="header-buttons">
+					<button class="header__botom-btn">Подобрать кредит</button>
+					<button class="header__botom-btn">Подобрать ипотеку</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

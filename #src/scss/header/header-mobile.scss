@@ -1,0 +1,93 @@
+.header__mobile {
+    display: none;
+    @media (max-width: 1024px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+    }
+}
+
+.header__mobile-top {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-bascket {
+    margin-right: 15px;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    background: url(../../img/mobile-bascket.svg) no-repeat;
+    background-size: cover;
+    @media (max-width: 768px) {
+        width: 22px;
+        height: 22px;
+    }
+}
+.burger {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--primary-disabled);
+    box-sizing: border-box;
+    border-radius: 6px;
+
+
+    @media (max-width: 768px) {
+        width: 30px;
+        height: 30px;
+    }
+
+    &::before{
+        content:'';
+        position: absolute;
+        top: 10px;
+        left: 9px;
+        width: 30px;
+        height: 3px;
+        border-radius:2px;
+        background: var(--primary-color);
+        @media (max-width: 768px) {
+            top: 8px;
+            left: 5px;
+            width: 18px;
+            height: 2px;
+        }
+    }
+
+    span{
+        position: absolute;
+        top:23px;
+        left: 9px;
+        width: 30px;
+        height: 3px;
+        border-radius: 2px;
+        background: var(--primary-color);
+        @media (max-width: 768px) {
+            top: 13px;
+            left: 5px;
+            width: 18px;
+            height: 2px;
+        }
+    }
+
+    &::after{
+        content:'';
+        position: absolute;
+        bottom: 10px;
+        left: 9px;
+        width: 30px;
+        height: 3px;
+        border-radius: 2px;
+        background: var(--primary-color);
+        @media (max-width: 768px) {
+            top: 18px;
+            left: 5px;
+            width: 18px;
+            height: 2px;
+        }
+    }
+
+  
+}
